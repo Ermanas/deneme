@@ -3,7 +3,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 smile_cascade = cv2.CascadeClassifier("haarcascade_smile.xml")
-mouth_cascade = cv2.CascadeClassifier("haarcascade_mcs_mouth.xml")
+
 
 
 
@@ -23,7 +23,7 @@ def detect(gray, frame):
         for(mx,my,mw,mh) in mouths:
             cv2.rectangle(roi_color, (mx, my), (mx + mw, my + mh), (0, 255, 0), 2)
     return frame
-
+selam
 # Doing some Face Recognition with the WebCam
 video_capture = cv2.VideoCapture("C:/Users/FurkanErmanas/Desktop/dlibsiz (copy)/2-FemaleNoGlasses.avi")
 while True:
